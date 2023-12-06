@@ -2,6 +2,9 @@
     <string name="app_name">HoroscopeApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Toolbar-->
+    <string name="toolbarappname">Horoscope</string>
     
     <!-- Bottom Bar-->
     <string name="horoscope">Horoscope</string>
