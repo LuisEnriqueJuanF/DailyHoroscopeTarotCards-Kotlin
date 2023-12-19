@@ -8,23 +8,20 @@
 
     <FrameLayout
         android:id="@+id/toolbar"
-        android:background="@color/primaryDark"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:fontFamily="@font/dancing"
             android:layout_gravity="center"
+            android:text="@string/toolbarappname"
             android:textAllCaps="true"
-            android:textColor="@color/secondary"
-            android:text="@string/toolbarappname"/>
+            android:theme="@style/Title" />
     </FrameLayout>
 
     <androidx.fragment.app.FragmentContainerView
@@ -33,7 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
