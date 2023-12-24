@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primaryDark"
+        android:background="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,7 +21,7 @@
             android:layout_gravity="center"
             android:text="@string/toolbarappname"
             android:textAllCaps="true"
-            android:theme="@style/Title" />
+            android:theme="@style/HoroscopeName" />
     </FrameLayout>
 
     <androidx.fragment.app.FragmentContainerView

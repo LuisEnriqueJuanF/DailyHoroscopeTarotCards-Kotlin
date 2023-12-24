@@ -65,7 +65,7 @@ class HoroscopeFragment : Fragment() {
         })
 
         binding.rvHoroscope.apply {
-            layoutManager = GridLayoutManager(context, 2)
+            layoutManager = GridLayoutManager(context, 3)
             adapter = horoscopeAdapter
         }
     }
