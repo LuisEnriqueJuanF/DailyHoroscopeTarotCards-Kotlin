@@ -26,12 +26,18 @@ class HoroscopeDetailActivity : AppCompatActivity() {
         binding = ActivityHoroscopeDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
         horoscopeDetailViewModel.getHoroscope(args.type)
+        initLoadAds()
         initUI()
     }
 
     private fun initUI() {
         initListeners()
         initUIState()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = com.google.android.gms.ads.AdRequest.Builder().build()
+        binding.bannerDetail.loadAd(adRequest)
     }
 
     private fun initListeners() {

@@ -58,6 +58,9 @@ dependencies {
     val retrofitVersion = "2.9.0"
     val cameraVersion = "1.3.1"
 
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.7.1")
+
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")

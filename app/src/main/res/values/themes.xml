@@ -6,19 +6,44 @@
 
     <style name="Theme.HoroscopeApp" parent="Base.Theme.HoroscopeApp" />
 
-    <!-- Item_Horoscope -->
+    <!-- Main_Activity -->
+    <style name="MainActivityGreeting">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">@font/spacegrotesk_medium</item>
+    </style>
 
+    <style name="MainActivitySelectHoroscope" parent="MainActivityGreeting">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/spacegrotesk_light</item>
+    </style>
+
+    <!-- Item_Horoscope -->
     <style name="HoroscopeName">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/secondary</item>
-        <item name="android:fontFamily">@font/opensans_light</item>
+        <item name="android:fontFamily">@font/spacegrotesk_light</item>
+    </style>
+
+    <!-- Detail_Horoscope -->
+    <style name="DetailHoroscopeName">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:fontFamily">@font/spacegrotesk_medium</item>
+    </style>
+
+    <style name="DetailHoroscopeBody" parent="DetailHoroscopeName">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/spacegrotesk_light</item>
     </style>
 
     <!-- Fragment_Luck -->
-
-    <style name="Body" parent="HoroscopeName">
-        <item name="android:textStyle">italic</item>
-        <item name="android:textSize">20sp</item>
+    <style name="FragmentLuckBody" parent="DetailHoroscopeName">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:fontFamily">@font/spacegrotesk_light</item>
     </style>
 
 </resources>

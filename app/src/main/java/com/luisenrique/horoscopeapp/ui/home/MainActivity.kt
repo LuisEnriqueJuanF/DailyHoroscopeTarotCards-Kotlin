@@ -19,11 +19,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initLoadAds()
         initUI()
     }
 
     private fun initUI() {
         initNavigation()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = com.google.android.gms.ads.AdRequest.Builder().build()
+        binding.bannerMain.loadAd(adRequest)
     }
 
     private fun initNavigation() {

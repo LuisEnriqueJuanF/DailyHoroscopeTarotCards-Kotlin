@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent"
-    android:layout_width="100dp"
+    android:layout_width="95dp"
     android:layout_height="100dp"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginBottom="32dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginBottom="16dp"
     app:cardBackgroundColor="#373334"
     app:cardCornerRadius="16dp"
     app:cardElevation="0dp">
@@ -18,17 +18,20 @@
 
         <ImageView
             android:id="@+id/ivHoroscope"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@id/spacer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/geminis" />
+            app:tint="@color/secondary"
+            tools:src="@drawable/gemini" />
 
         <Space
             android:id="@+id/spacer"
             android:layout_width="match_parent"
-            android:layout_height="8dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@id/tvTitle"
             app:layout_constraintTop_toBottomOf="@id/ivHoroscope" />
 
@@ -39,7 +42,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spacer" />
+            app:layout_constraintTop_toBottomOf="@+id/spacer"
+            tools:text="@string/sagittarius" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
